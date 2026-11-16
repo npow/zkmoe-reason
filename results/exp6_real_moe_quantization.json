@@ -1,0 +1,37 @@
+{
+  "d": 512,
+  "N": 64,
+  "k": 2,
+  "results": [
+    {
+      "bits": 8,
+      "n_tokens": 32,
+      "topk_routing_agreement_pct": 100.0,
+      "mean_cosine_similarity": 0.999888,
+      "mean_rel_l2_error": 0.016386,
+      "zk_verified_pct": 100.0,
+      "mean_prover_ms": 1365.59,
+      "mean_succinct_verifier_ms": 51.64
+    },
+    {
+      "bits": 12,
+      "n_tokens": 32,
+      "topk_routing_agreement_pct": 100.0,
+      "mean_cosine_similarity": 0.999999,
+      "mean_rel_l2_error": 0.001105,
+      "zk_verified_pct": 100.0,
+      "mean_prover_ms": 1235.4,
+      "mean_succinct_verifier_ms": 46.95
+    },
+    {
+      "bits": 16,
+      "n_tokens": 32,
+      "topk_routing_agreement_pct": 100.0,
+      "mean_cosine_similarity": 1.0,
+      "mean_rel_l2_error": 6.4e-05,
+      "zk_verified_pct": 100.0,
+      "mean_prover_ms": 1394.45,
+      "mean_succinct_verifier_ms": 54.04
+    }
+  ]
+}

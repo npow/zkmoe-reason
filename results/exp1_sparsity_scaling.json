@@ -1,0 +1,203 @@
+{
+  "k": 2,
+  "results": [
+    {
+      "d": 256,
+      "N": 4,
+      "k": 2,
+      "zkmoe_prover_ms": 48.78,
+      "zkmoe_verifier_ms": 24.62,
+      "zkmoe_mem_mb": 2.04,
+      "dense_prover_ms": 96.02,
+      "dense_mem_mb": 2.58,
+      "speedup_vs_dense": 1.97
+    },
+    {
+      "d": 256,
+      "N": 8,
+      "k": 2,
+      "zkmoe_prover_ms": 49.21,
+      "zkmoe_verifier_ms": 26.46,
+      "zkmoe_mem_mb": 2.04,
+      "dense_prover_ms": 178.48,
+      "dense_mem_mb": 2.69,
+      "speedup_vs_dense": 3.63
+    },
+    {
+      "d": 256,
+      "N": 16,
+      "k": 2,
+      "zkmoe_prover_ms": 62.22,
+      "zkmoe_verifier_ms": 38.03,
+      "zkmoe_mem_mb": 2.04,
+      "dense_prover_ms": 356.41,
+      "dense_mem_mb": 2.91,
+      "speedup_vs_dense": 5.73
+    },
+    {
+      "d": 256,
+      "N": 32,
+      "k": 2,
+      "zkmoe_prover_ms": 86.38,
+      "zkmoe_verifier_ms": 61.85,
+      "zkmoe_mem_mb": 2.04,
+      "dense_prover_ms": 710.53,
+      "dense_mem_mb": 3.46,
+      "speedup_vs_dense": 8.23
+    },
+    {
+      "d": 256,
+      "N": 64,
+      "k": 2,
+      "zkmoe_prover_ms": 129.43,
+      "zkmoe_verifier_ms": 103.46,
+      "zkmoe_mem_mb": 2.04,
+      "dense_prover_ms": 1428.77,
+      "dense_mem_mb": 4.55,
+      "speedup_vs_dense": 11.04
+    },
+    {
+      "d": 256,
+      "N": 128,
+      "k": 2,
+      "zkmoe_prover_ms": 218.05,
+      "zkmoe_verifier_ms": 187.77,
+      "zkmoe_mem_mb": 2.05,
+      "dense_prover_ms": 2856.19,
+      "dense_mem_mb": 6.73,
+      "speedup_vs_dense": 13.1
+    },
+    {
+      "d": 512,
+      "N": 4,
+      "k": 2,
+      "zkmoe_prover_ms": 62.12,
+      "zkmoe_verifier_ms": 32.23,
+      "zkmoe_mem_mb": 8.06,
+      "dense_prover_ms": 120.38,
+      "dense_mem_mb": 10.1,
+      "speedup_vs_dense": 1.94
+    },
+    {
+      "d": 512,
+      "N": 8,
+      "k": 2,
+      "zkmoe_prover_ms": 80.21,
+      "zkmoe_verifier_ms": 49.54,
+      "zkmoe_mem_mb": 8.06,
+      "dense_prover_ms": 239.0,
+      "dense_mem_mb": 10.21,
+      "speedup_vs_dense": 2.98
+    },
+    {
+      "d": 512,
+      "N": 16,
+      "k": 2,
+      "zkmoe_prover_ms": 114.07,
+      "zkmoe_verifier_ms": 86.71,
+      "zkmoe_mem_mb": 8.06,
+      "dense_prover_ms": 479.79,
+      "dense_mem_mb": 10.49,
+      "speedup_vs_dense": 4.21
+    },
+    {
+      "d": 512,
+      "N": 32,
+      "k": 2,
+      "zkmoe_prover_ms": 184.08,
+      "zkmoe_verifier_ms": 150.62,
+      "zkmoe_mem_mb": 8.06,
+      "dense_prover_ms": 967.07,
+      "dense_mem_mb": 11.11,
+      "speedup_vs_dense": 5.25
+    },
+    {
+      "d": 512,
+      "N": 64,
+      "k": 2,
+      "zkmoe_prover_ms": 308.84,
+      "zkmoe_verifier_ms": 274.96,
+      "zkmoe_mem_mb": 8.07,
+      "dense_prover_ms": 1924.28,
+      "dense_mem_mb": 12.36,
+      "speedup_vs_dense": 6.23
+    },
+    {
+      "d": 512,
+      "N": 128,
+      "k": 2,
+      "zkmoe_prover_ms": 566.57,
+      "zkmoe_verifier_ms": 526.29,
+      "zkmoe_mem_mb": 8.07,
+      "dense_prover_ms": 3851.76,
+      "dense_mem_mb": 14.85,
+      "speedup_vs_dense": 6.8
+    },
+    {
+      "d": 1024,
+      "N": 4,
+      "k": 2,
+      "zkmoe_prover_ms": 171.51,
+      "zkmoe_verifier_ms": 104.35,
+      "zkmoe_mem_mb": 32.1,
+      "dense_prover_ms": 253.94,
+      "dense_mem_mb": 40.13,
+      "speedup_vs_dense": 1.48
+    },
+    {
+      "d": 1024,
+      "N": 8,
+      "k": 2,
+      "zkmoe_prover_ms": 263.43,
+      "zkmoe_verifier_ms": 191.36,
+      "zkmoe_mem_mb": 32.1,
+      "dense_prover_ms": 508.01,
+      "dense_mem_mb": 40.26,
+      "speedup_vs_dense": 1.93
+    },
+    {
+      "d": 1024,
+      "N": 16,
+      "k": 2,
+      "zkmoe_prover_ms": 434.39,
+      "zkmoe_verifier_ms": 363.29,
+      "zkmoe_mem_mb": 32.1,
+      "dense_prover_ms": 1023.35,
+      "dense_mem_mb": 40.58,
+      "speedup_vs_dense": 2.36
+    },
+    {
+      "d": 1024,
+      "N": 32,
+      "k": 2,
+      "zkmoe_prover_ms": 781.57,
+      "zkmoe_verifier_ms": 715.16,
+      "zkmoe_mem_mb": 32.1,
+      "dense_prover_ms": 2028.2,
+      "dense_mem_mb": 41.27,
+      "speedup_vs_dense": 2.6
+    },
+    {
+      "d": 1024,
+      "N": 64,
+      "k": 2,
+      "zkmoe_prover_ms": 1470.1,
+      "zkmoe_verifier_ms": 1394.6,
+      "zkmoe_mem_mb": 32.1,
+      "dense_prover_ms": 4067.91,
+      "dense_mem_mb": 42.66,
+      "speedup_vs_dense": 2.77
+    },
+    {
+      "d": 1024,
+      "N": 128,
+      "k": 2,
+      "zkmoe_prover_ms": 2901.51,
+      "zkmoe_verifier_ms": 2763.8,
+      "zkmoe_mem_mb": 32.11,
+      "dense_prover_ms": 8137.21,
+      "dense_mem_mb": 45.43,
+      "speedup_vs_dense": 2.8
+    }
+  ]
+}

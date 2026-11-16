@@ -1,0 +1,18 @@
+{
+  "n_trials": 100,
+  "honest_acceptance_rate": 1.0,
+  "attack_detection_rates": {
+    "model_downgrade": 1.0,
+    "reasoning_truncation": 1.0,
+    "expert_skipping": 1.0,
+    "router_cheating": 1.0,
+    "cot_kv_tampering": 1.0
+  },
+  "undetected_fraud_rates": {
+    "model_downgrade": 0.0,
+    "reasoning_truncation": 0.0,
+    "expert_skipping": 0.0,
+    "router_cheating": 0.0,
+    "cot_kv_tampering": 0.0
+  }
+}

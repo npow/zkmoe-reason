@@ -1,0 +1,79 @@
+{
+  "k": 2,
+  "bit_width": 16,
+  "ref_matmul_d512_ms": 606.08,
+  "results": [
+    {
+      "N": 8,
+      "k": 2,
+      "threshold_constraints": 177,
+      "bitonic_constraints": 552,
+      "pairwise_constraints": 597,
+      "threshold_prover_ms": 11.88,
+      "threshold_verifier_ms": 0.19,
+      "bitonic_prover_ms": 10.111,
+      "constraint_reduction_vs_bitonic": 3.12,
+      "overhead_vs_d512_matmul_pct": 1.96
+    },
+    {
+      "N": 16,
+      "k": 2,
+      "threshold_constraints": 369,
+      "bitonic_constraints": 1920,
+      "pairwise_constraints": 2657,
+      "threshold_prover_ms": 14.156,
+      "threshold_verifier_ms": 0.2,
+      "bitonic_prover_ms": 13.599,
+      "constraint_reduction_vs_bitonic": 5.2,
+      "overhead_vs_d512_matmul_pct": 2.34
+    },
+    {
+      "N": 32,
+      "k": 2,
+      "threshold_constraints": 769,
+      "bitonic_constraints": 6000,
+      "pairwise_constraints": 11441,
+      "threshold_prover_ms": 16.783,
+      "threshold_verifier_ms": 0.228,
+      "bitonic_prover_ms": 19.814,
+      "constraint_reduction_vs_bitonic": 7.8,
+      "overhead_vs_d512_matmul_pct": 2.77
+    },
+    {
+      "N": 64,
+      "k": 2,
+      "threshold_constraints": 1601,
+      "bitonic_constraints": 17472,
+      "pairwise_constraints": 48449,
+      "threshold_prover_ms": 19.746,
+      "threshold_verifier_ms": 0.254,
+      "bitonic_prover_ms": 25.657,
+      "constraint_reduction_vs_bitonic": 10.91,
+      "overhead_vs_d512_matmul_pct": 3.26
+    },
+    {
+      "N": 128,
+      "k": 2,
+      "threshold_constraints": 3329,
+      "bitonic_constraints": 48384,
+      "pairwise_constraints": 203329,
+      "threshold_prover_ms": 23.223,
+      "threshold_verifier_ms": 0.285,
+      "bitonic_prover_ms": 65.887,
+      "constraint_reduction_vs_bitonic": 14.53,
+      "overhead_vs_d512_matmul_pct": 3.83
+    },
+    {
+      "N": 256,
+      "k": 2,
+      "threshold_constraints": 6913,
+      "bitonic_constraints": 129024,
+      "pairwise_constraints": 848897,
+      "threshold_prover_ms": 28.3,
+      "threshold_verifier_ms": 0.311,
+      "bitonic_prover_ms": 148.495,
+      "constraint_reduction_vs_bitonic": 18.66,
+      "overhead_vs_d512_matmul_pct": 4.67
+    }
+  ]
+}
