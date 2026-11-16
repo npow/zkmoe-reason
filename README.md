@@ -1,10 +1,10 @@
-# zkMoE-Reason: Sublinear Zero-Knowledge Proofs for Sparse Mixture-of-Experts & Hidden Test-Time Reasoning
+# zkMoE-Reason: prototype cost study for verifiable sparse MoE inference
 
-**zkMoE-Reason** is a commit-and-prove zero-knowledge protocol for frontier Sparse Mixture-of-Experts (MoE) Transformers with hidden test-time reasoning (Chain-of-Thought). It combines:
+Research prototype (not audited). It measures (1) an active-experts-only matmul sumcheck plus a $\Theta(Nd^2)$ expert-table projection checked by one commitment opening, and (2) a threshold-witness top-k relation's constraint count against a bitonic network.
 
-1. **Sumcheck-Reduced Oblivious Expert Lookup** (`src/zk_moe/oblivious_expert.py`): Reduces proving $k$ active experts out of $N$ total experts from $O(N d^2)$ (dense masked) or $O(k d^2 N)$ (naive element-wise lookup) to $O(k d^2 + N)$ by deferring expert-table lookups until after the batched matmul sumcheck emits a single random point $(r^*, c^*)$.
-2. **Threshold-Based $O(N)$ Top-$k$ Router Proof** (`src/zk_moe/zk_topk_router.py`): Proves exact top-$k$ expert selection using a witness threshold $\tau$ and $N$ range checks rather than an $O(N \log^2 N)$ bitonic sorting network.
-3. **Hidden CoT Autoregressive Folding** (`src/zk_moe/cot_folding.py`): Folds $T_{\text{think}}$ hidden reasoning steps and KV-cache commitments into a single constant-round sumcheck accumulator, preventing truncation, model-downgrade, and expert-skipping fraud without leaking hidden CoT tokens.
+Not claimed: routing privacy (opened indicator evaluations reveal the indices), sublinear cost in N, soundness of the chain-of-thought folding accumulator in `cot_folding.py` (kept only as an unproven prototype), or a composed proof of full MoE inference. Baselines are our own re-implementations; all timings are medians of 3 after warm-up on one aarch64 machine with random weights. See `paper/main.tex`, Section "Limitations".
+
+Reproduce: `gcc -O3 -march=native -shared -fPIC native/zkmoe_fast.c -o native/libzkmoe.so`, then the commands below. Raw results: `results/*.json`.
 
 ## Repository Structure
 
